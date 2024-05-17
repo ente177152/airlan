@@ -1,0 +1,62 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.linear-bg {
+    background-image: linear-gradient(to right, rgba(42, 39, 203, 1), rgba(38, 91, 227, 1), rgba(75, 196, 249, 1)) !important;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.detail-card {
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.detail-card label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    user-select: none;
+    background: #265BE3;
+    height: 44px;
+    width: 44px;
+}
+
+/* Checked */
+.detail-card input[type=radio]:checked + label {
+    background: #F4C82C;
+}
+
+/* Disabled */
+.detail-card input[type=radio]:disabled + label {
+    background: #000000;
+}
+
+.detail-card-free {
+    background: #265BE3;
+}
+
+.detail-card-busy {
+    background: #000000;
+}
+
+.detail-card-select {
+    background: #F4C82C;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #ffffff;
+}
